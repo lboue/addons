@@ -39,10 +39,8 @@ RUN \
         libprotobuf-dev \
         protobuf-compiler \
     && rm -rf /var/lib/apt/lists/* \
-    && git clone --depth 1 -b main https://github.com/openthread/ot-br-posix.git /usr/src/ot-br-posix \
+    && git clone --depth 1 -b epskc-rest-endpoints https://github.com/lboue/ot-br-posix.git /usr/src/ot-br-posix \
     && cd /usr/src/ot-br-posix \
-    && git fetch origin ${OTBR_BETA_VERSION} \
-    && git checkout ${OTBR_BETA_VERSION} \
     && git submodule update --init --recursive --depth 1
 
 WORKDIR /usr/src/ot-br-posix
