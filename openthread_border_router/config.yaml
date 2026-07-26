@@ -1,5 +1,5 @@
 ---
-version: 3.0.2+epskc-test.1
+version: 3.0.2-epskctest1
 breaking_versions: [3.0.0]
 slug: openthread_border_router
 name: OpenThread Border Router
@@ -23,7 +23,6 @@ privileged:
   - NET_ADMIN
 devices:
   - /dev/net/tun
-image: homeassistant/{arch}-addon-otbr
 init: false
 options:
   device: null
